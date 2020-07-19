@@ -1,36 +1,63 @@
-# Flexible-Jekyll is a simple and clean theme for Jekyll
+[Hux Blog](https://huangxuan.me)
+================================
 
-![](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/promo-img.jpg?raw=true)
+> I never expected this becomes popular.
 
-## Demo
+![](http://huangxuan.me/img/blog-desktop.jpg)
 
-Check the theme in action [Demo](https://artemsheludko.github.io/flexible-jekyll/)
 
-The main page would look like this:
+[User Manual 👉](_doc/Manual.md)
+--------------------------------------------------
 
-![Main page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/home-page.jpg?raw=true)
+### Getting Started
 
-The post page would look like this:
+1. You will need [Ruby](https://www.ruby-lang.org/en/) and [Bundler](https://bundler.io/) to use [Jekyll](https://jekyllrb.com/). Following [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/) to fullfill the enviromental requirement.
 
-![Post page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/post-example.jpg?raw=true)
+2. Installed dependencies in the `Gemfile`:
 
-## Features
+```sh
+$ bundle install 
+```
 
-- [Google Fonts](https://fonts.google.com/)
-- [Font Awesome](http://fontawesome.io/)
-- [Disqus](https://disqus.com/)
-- [Analytics](https://analytics.google.com/analytics/web/)
-- Support Emoji
+3. Serve the website (`localhost:4000` by default):
 
-## Installation:
+```sh
+$ bundle exec jekyll serve  # alternatively, npm start
+```
 
-Fork the ``master`` branch and follow the [Jekyll Installation Documentation](https://jekyllrb.com/docs/installation/).
+### Development (Build From Source)
 
-## License
+To modify the theme, you will need [Grunt](https://gruntjs.com/). There are numbers of tasks you can find in the `Gruntfile.js`, includes minifing JavaScript, compiling `.less` to `.css`, adding banners to keep the Apache 2.0 license intact, watching for changes, etc. 
 
-GNU General Public License v3.0
+Yes, they were inherited and are extremely old-fashioned. There is no modularization and transpilation, etc.
 
-## Donate
+Critical Jekyll-related code are located in `_include/` and `_layouts/`. Most of them are [Liquid](https://github.com/Shopify/liquid/wiki) templates.
 
-<p>If you like the themes that I create you can become my sponsor on <a href="https://www.patreon.com/artemsheludko" target="_blank">Patreon</a>.
-<p align="center"><b>Thank you for your support ❤️</b></p>
+This theme uses the default code syntax highlighter of jekyll, [Rouge](http://rouge.jneen.net/), which is compatible with Pygments theme so just pick any pygments theme css (e.g. from [here](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html) and replace the content of `highlight.less`.
+
+
+### Interesting to know more? Checkout the [full user manual](_doc/Manual.md)!
+
+
+Other Resources
+---------------
+
+Ports
+- [**Hexo**](https://github.com/Kaijun/hexo-theme-huxblog) by @kaijun
+- [**React-SSR**](https://github.com/LucasIcarus/huxpro.github.io/tree/ssr) by @LucasIcarus
+
+[Starter/Boilerplate](https://github.com/huxpro/huxblog-boilerplate)
+- Out of date. Helps wanted for updating it on par with the main repo
+
+Translation
+- [🇨🇳 (somewhat outdated)](https://github.com/Huxpro/huxpro.github.io/blob/master/_doc/README.zh.md)
+
+
+License
+-------
+
+Apache License 2.0.
+Copyright (c) 2015-present Huxpro
+
+Hux Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
+Copyright (c) 2013-2016 Blackrock Digital LLC.
