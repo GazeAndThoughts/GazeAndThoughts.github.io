@@ -1,0 +1,14 @@
+---
+layout:     post
+title:      "title"
+subtitle:   "subtitle"
+date:       2020-07-19
+author:     "theGaze"
+iframe:     "//huangxuan.me/sw-101-gdgdf/"
+header-img: "img/post-bg-os-metro.jpg"
+navcolor:   "invert"
+header-style: text
+catalog: true
+tags:
+  - test
+---
